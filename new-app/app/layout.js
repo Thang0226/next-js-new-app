@@ -8,26 +8,27 @@ export default function Layout({ children }) {
       <div>
         <ul>
           <li>
-            <Link href="/">
+            <Link href="/" className={styles.link}>
               Home
             </Link>
           </li>
           <li>
-            <Link href="/about">
+            <Link href="/about" className={styles.link}>
               About Us
             </Link>
           </li>
           <li>
-            <Link href="/blog">
+            <Link href="/blog" className={styles.link}>
               Blog
             </Link>
           </li>
           <li>
-            <Link href="/login">
+            <Link href="/login" className={styles.link}>
               Logout
             </Link>
           </li>
         </ul>
+        <hr/>
         <div className={styles.container}>{children}</div>
       </div>
       </body>
